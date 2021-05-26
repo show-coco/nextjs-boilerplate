@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { PhoneIcon } from "@chakra-ui/icons";
+import React from "react";
+import { Button, Stack } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -11,6 +14,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <PhoneIcon />
+
+      <Stack spacing={4} direction="row" align="center">
+        <Button colorScheme="teal" size="xs">
+          Button
+        </Button>
+        <Button colorScheme="teal" size="sm">
+          Button
+        </Button>
+        <Button colorScheme="teal" size="md">
+          Button
+        </Button>
+        <Button colorScheme="teal" size="lg">
+          Button
+        </Button>
+      </Stack>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -51,7 +70,6 @@ export default function Home() {
           </a>
         </div>
       </main>
-
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
